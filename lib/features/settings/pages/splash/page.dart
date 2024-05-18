@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kasirsuper/core/core.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -10,9 +11,16 @@ class SplashPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/images/logo.png'),
-            Text('Kasir SUPER POS',
-                style: Theme.of(context).textTheme.headlineSmall),
+            Image.asset(
+              MyAssets.logo,
+              width: MyDimens.width(context) / 2,
+            ),
+            MyDimens.dp20.height,
+            Text('Kasir SUPER',
+                style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.w700,
+                    color: context.theme.primaryColor)),
           ],
         ),
       ),
