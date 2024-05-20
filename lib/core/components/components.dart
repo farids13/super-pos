@@ -1,1 +1,2 @@
-// TODO Implement this library.
+export 'text/header_text.dart';
+export 'text/reguler_text.dart';

@@ -16,11 +16,10 @@ class SplashPage extends StatelessWidget {
               width: MyDimens.width(context) / 2,
             ),
             MyDimens.dp20.height,
-            Text('Kasir SUPER',
-                style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.w700,
-                    color: context.theme.primaryColor)),
+            HeadingText(
+              'Kasir SUPER',
+              style: TextStyle(color: context.theme.primaryColor),
+            ),
           ],
         ),
       ),
