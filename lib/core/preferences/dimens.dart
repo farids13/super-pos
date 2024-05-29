@@ -6,6 +6,8 @@ class MyDimens {
   static width(BuildContext context) => MediaQuery.of(context).size.width;
   static height(BuildContext context) => MediaQuery.of(context).size.height;
 
+  static const defaultSize = 16.0;
+
   static const dp2 = 2.0;
   static const dp4 = 4.0;
   static const dp6 = 6.0;

@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:kasirsuper/core/core.dart';
 
@@ -8,6 +10,7 @@ class MyLightTheme {
 
   final Color errorColor = MyAppColors.red;
   final Color textColor = MyAppColors.black;
+  final Color borderColor = MyAppColors.white[600]!;
 
   ColorScheme get colorScheme => ColorScheme.light(
         primary: primaryColor,
@@ -58,12 +61,21 @@ class MyLightTheme {
         ),
       );
 
-  ThemeData get theme => ThemeData(
-        fontFamily: 'Poppins',
-        colorScheme: colorScheme,
-        useMaterial3: true,
-        primaryColor: primaryColor,
-        brightness: Brightness.light,
-        textTheme: textTheme,
+  CardTheme get cardTheme => CardTheme(
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(MyDimens.dp8),
+            side: BorderSide(
+              color: borderColor,
+            )),
       );
+
+  ThemeData get theme => ThemeData(
+      fontFamily: 'Poppins',
+      colorScheme: colorScheme,
+      useMaterial3: true,
+      primaryColor: primaryColor,
+      brightness: Brightness.light,
+      textTheme: textTheme,
+      cardTheme: cardTheme);
 }
