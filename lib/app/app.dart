@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kasirsuper/app/routes.dart';
 import 'package:kasirsuper/core/core.dart';
-import 'package:kasirsuper/features/home/home.dart';
 import 'package:kasirsuper/features/settings/pages/splash/page.dart';
 
 class MyApp extends StatelessWidget {
@@ -11,9 +10,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: MyLightTheme(AppColors.green).theme,
+      theme: LightTheme(AppColors.green).theme,
       home: const SplashPage(),
       onGenerateRoute: routes,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

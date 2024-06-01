@@ -1,4 +1,4 @@
-part of '../page.dart';
+part of '../home_page.dart';
 
 class _CardWidget extends StatelessWidget {
   final String title;

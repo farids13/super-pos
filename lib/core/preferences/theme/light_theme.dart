@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kasirsuper/core/core.dart';
 
 class LightTheme {
   LightTheme(this.primaryColor);

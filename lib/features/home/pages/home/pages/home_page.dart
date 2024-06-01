@@ -22,20 +22,22 @@ class _HomePageState extends State<HomePage> {
           style: const TextStyle(fontSize: Dimens.dp20),
         ),
       ),
-      body: const SingleChildScrollView(
-        padding: EdgeInsets.all(Dimens.defaultSize),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(Dimens.defaultSize),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            _CardWidget(
+            const _CardWidget(
               title: 'Total Penjualan',
               value: 'Rp 5.000.000',
             ),
-            _CardWidget(
+            Dimens.defaultSize.height,
+            const _CardWidget(
               title: 'Total Transaksi',
               value: '20',
             ),
-            _CardWidget(
+            Dimens.defaultSize.height,
+            const _CardWidget(
               title: 'Total Produk',
               value: '123',
             )

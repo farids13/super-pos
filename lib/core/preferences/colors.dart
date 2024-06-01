@@ -50,6 +50,7 @@ class AppColors {
   static const white = MaterialColor(0xffE0E0E0, {
     200: Color(0xffFAFAFA),
     400: Color(0xffF5F5F5),
+    500: Color(0xffE0E0E0),
     600: Color(0xffCCCCCC),
     800: Color(0xffB8B8B8),
   });

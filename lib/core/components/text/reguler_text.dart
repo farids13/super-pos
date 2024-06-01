@@ -39,6 +39,7 @@ class RegularText extends StatelessWidget {
       style: const TextStyle(
         fontWeight: FontWeight.w500,
         color: AppColors.black,
+        fontSize: Dimens.dp24,
       ).merge(style),
     );
   }
