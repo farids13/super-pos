@@ -23,7 +23,7 @@ class RegularText extends StatelessWidget {
       textAlign: textAlign,
       style: const TextStyle(
         fontWeight: FontWeight.w600,
-        color: MyAppColors.black,
+        color: AppColors.black,
       ).merge(style),
     );
   }
@@ -38,7 +38,7 @@ class RegularText extends StatelessWidget {
       textAlign: textAlign,
       style: const TextStyle(
         fontWeight: FontWeight.w500,
-        color: MyAppColors.black,
+        color: AppColors.black,
       ).merge(style),
     );
   }

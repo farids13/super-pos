@@ -32,9 +32,9 @@ class _SplashPageState extends State<SplashPage> {
           children: [
             Image.asset(
               MyAssets.logo,
-              width: MyDimens.width(context) / 2,
+              width: Dimens.width(context) / 2,
             ),
-            MyDimens.dp20.height,
+            Dimens.dp20.height,
             HeadingText(
               'Kasir SUPER',
               style: TextStyle(color: context.theme.primaryColor),

@@ -68,3 +68,6 @@ flutter:
         - asset: assets/fonts/poppins/Poppins-ThinItalic.ttf
           weight: 100
           style: italic
+    - family: CustomIcons
+      fonts:
+        - asset: assets/fonts/icons/CustomIcons.ttf
