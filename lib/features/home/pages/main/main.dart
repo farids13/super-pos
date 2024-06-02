@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kasirsuper/core/preferences/icons.dart';
 import 'package:kasirsuper/features/home/home.dart';
+import 'package:kasirsuper/features/pos/pages/pages.dart';
 import 'package:kasirsuper/features/transaction/transaction.dart';
 
 class Main extends StatefulWidget {
@@ -13,11 +14,11 @@ class Main extends StatefulWidget {
 class _MainState extends State<Main> {
   @override
   Widget build(BuildContext context) {
-    const pages = [HomePage(), TransactionPage()];
+    const pages = [HomePage(), TransactionPage(), PosPage()];
     const int index = 2;
 
     return Scaffold(
-      body: pages[1],
+      body: pages[2],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
         items: const [
