@@ -1,2 +1,2 @@
-export 'text/header_text.dart';
-export 'text/reguler_text.dart';
+export 'text/text.dart';
+export 'input/input.dart';

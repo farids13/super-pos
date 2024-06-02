@@ -1,5 +1,5 @@
-class MyAssets {
-  MyAssets._();
+class MainAssets {
+  MainAssets._();
 
   static const path = 'assets/images';
 

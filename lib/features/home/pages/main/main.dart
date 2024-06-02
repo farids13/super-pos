@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kasirsuper/core/preferences/icons.dart';
 import 'package:kasirsuper/features/home/home.dart';
-import 'package:kasirsuper/features/home/pages/transaction/transaction.dart';
+import 'package:kasirsuper/features/transaction/transaction.dart';
 
 class Main extends StatefulWidget {
   const Main({super.key});

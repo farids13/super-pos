@@ -31,7 +31,7 @@ class _SplashPageState extends State<SplashPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              MyAssets.logo,
+              MainAssets.logo,
               width: Dimens.width(context) / 2,
             ),
             Dimens.dp20.height,
