@@ -24,7 +24,7 @@ class _TransactionPageState extends State<TransactionPage> {
         body: true
             ? Column(
                 children: [
-                  _filterSection(),
+                  _FilterSection(),
                   Expanded(
                     child: ListView.builder(
                       itemCount: 2,

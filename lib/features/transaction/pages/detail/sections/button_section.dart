@@ -33,7 +33,7 @@ class _ButtonSection extends StatelessWidget {
                     "Cetak Struk",
                     width: double.infinity,
                     textAlign: TextAlign.center,
-                    isOutline: false,
+                    isSolid: false,
                     textColor: context.theme.primaryColor,
                   )
                 ],

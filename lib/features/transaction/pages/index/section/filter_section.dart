@@ -1,18 +1,18 @@
 part of "../transaction_page.dart";
 
-class _filterSection extends StatelessWidget {
+class _FilterSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(Dimens.defaultSize),
       child: Row(
         children: [
-          BorderButton(
+          const BorderButton(
             "Done",
-            isOutline: true,
+            isSolid: true,
           ),
           Dimens.defaultSize.width,
-          BorderButton("Draft"),
+          const BorderButton("Draft"),
         ],
       ),
     );

@@ -66,7 +66,7 @@ BorderButton _buttonFloating(
     BuildContext context, String text, IconData prefixIcon) {
   return BorderButton(
     text,
-    isOutline: false,
+    isSolid: false,
     decoration: BoxDecoration(boxShadow: [
       BoxShadow(
         color: context.theme.primaryColor.withOpacity(0.5),

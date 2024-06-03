@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kasirsuper/core/core.dart';
-import 'package:kasirsuper/core/preferences/dimens.dart';
 
 part "sections/detail_section.dart";
 part "sections/button_section.dart";

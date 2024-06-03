@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kasirsuper/core/core.dart';
-import 'package:kasirsuper/core/preferences/dimens.dart';
-import 'package:kasirsuper/core/preferences/preferences.dart';
 
+part "item_section.dart";
 part "section/floating_button_section.dart";
 
 class PosPage extends StatefulWidget {
@@ -20,19 +19,29 @@ class _PosPageState extends State<PosPage> {
         title: RegularText.medium("POS"),
         elevation: 4,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(Dimens.defaultSize),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            const RegularInput(
+      body: Column(
+        children: [
+          const Padding(
+            padding: EdgeInsets.all(Dimens.defaultSize),
+            child: RegularInput(
               "Search ...",
               prefixIcon: AppIcons.search,
             ),
-            EmptyTemplate(),
-            Dimens.defaultSize.height,
-          ],
-        ),
+          ),
+          Expanded(
+            child: Builder(builder: (context) {
+              if (false) return EmptyTemplate();
+              return ListView.separated(
+                  padding: const EdgeInsets.all(Dimens.defaultSize),
+                  itemBuilder: (context, index) {
+                    return _ItemSection();
+                  },
+                  itemCount: 10,
+                  separatorBuilder: (context, index) => Dimens.dp16.height);
+            }),
+          ),
+          Dimens.defaultSize.height,
+        ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: _FloatingButtonSection(),
